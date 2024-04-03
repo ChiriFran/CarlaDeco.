@@ -41,15 +41,15 @@ function handleStickyActions(isSticky) {
   const carritoLogoStickyContainer = document.getElementById("tiendaStickyContainer");
   const carritoLogoSticky = document.getElementById("tiendaImgSticky");
 
-  lupa.src = `media/icons/lupa${isSticky ? 'Blanca' : 'Negra'}.svg`;
+  lupa.src = `./media/icons/lupa${isSticky ? 'Blanca' : 'Negra'}.svg`;
 
-  const carritoLogoSrc = isSticky ? "media/icons/carritoStickyNegro.svg" : "media/icons/carritoSticky.svg";
+  const carritoLogoSrc = isSticky ? "./media/icons/carritoStickyNegro.svg" : "./media/icons/carritoSticky.svg";
   carritoLogoStickyContainer.addEventListener("mouseover", () => {
     carritoLogoSticky.src = carritoLogoSrc;
   });
 
   carritoLogoStickyContainer.addEventListener("mouseout", () => {
-    carritoLogoSticky.src = "media/icons/carritoSticky.svg";
+    carritoLogoSticky.src = "./media/icons/carritoSticky.svg";
   });
 }
 
