@@ -1,0 +1,233 @@
+[
+    {
+        "id": "mueble-01",
+        "titulo": "Mesa",
+        "imagen": "../media/img/productos/mesas/mesa1.png",
+        "categoria": {
+            "nombre": "Muebles",
+            "id": "mesa"
+        },
+        "descripcion" : "Natural",
+        "precio": 50000
+    },
+    {
+        "id": "mueble-02",
+        "titulo": "Mesa",
+        "imagen": "../media/img/productos/mesas/mesa2.png",
+        "categoria": {
+            "nombre": "Muebles",
+            "id": "mesa"
+        },
+        "descripcion" : "Oscuro",
+        "precio": 60000
+    },
+    {
+        "id": "mueble-03",
+        "titulo": "Mesa",
+        "imagen": "../media/img/productos/mesas/mesa3.png",
+        "categoria": {
+            "nombre": "Muebles",
+            "id": "mesa"
+        },
+        "descripcion" : "Natural",
+        "precio": 45000
+    },
+    {
+        "id": "mueble-04",
+        "titulo": "Mesa",
+        "imagen": "../media/img/productos/mesas/mesa4.png",
+        "categoria": {
+            "nombre": "Muebles",
+            "id": "mesa"
+        },
+        "descripcion" : "Mesa",
+        "precio": 20000
+    },
+    {
+        "id": "mueble-05",
+        "titulo": "Mesa",
+        "imagen": "../media/img/productos/mesas/mesa5.png",
+        "categoria": {
+            "nombre": "Muebles",
+            "id": "mesa"
+        },
+        "descripcion" : "Mesa",
+        "precio": 30.000
+    },
+    {
+        "id": "escritorios-01",
+        "titulo": "Escritorio",
+        "imagen": "../media/img/productos/escritorios/escritorio1.png",
+        "categoria": {
+            "nombre": "Escritorios",
+            "id": "escritorio"
+        },
+        "descripcion" : "Escritorio",
+        "precio": 40.000
+    },
+    {
+        "id": "escritorios-02",
+        "titulo": "Escritorio",
+        "imagen": "../media/img/productos/escritorios/escritorio2.png",
+        "categoria": {
+            "nombre": "Escritorios",
+            "id": "escritorio"
+        },
+        "descripcion" : "Escritorio",
+        "precio": 30.000
+    },
+    {
+        "id": "escritorios-03",
+        "titulo": "Escritorio",
+        "imagen": "../media/img/productos/escritorios/escritorio3.png",
+        "categoria": {
+            "nombre": "Escritorios",
+            "id": "escritorio"
+        },
+        "descripcion" : "Escritorio",
+        "precio": 45.000
+    },
+    {
+        "id": "escritorios-04",
+        "titulo": "Escritorio",
+        "imagen": "../media/img/productos/escritorios/escritorio4.png",
+        "categoria": {
+            "nombre": "Escritorios",
+            "id": "escritorio"
+        },
+        "descripcion" : "Escritorio",
+        "precio": 50.000
+    },
+    {
+        "id": "perchero-01",
+        "titulo": "Perchero ",
+        "imagen": "../media/img/productos/percheros/perchero1.png",
+        "categoria": {
+            "nombre": "Perchero",
+            "id": "perchero"
+        },
+        "descripcion" : "Perchero",
+        "precio": 15.000
+    },
+    {
+        "id": "perchero-02",
+        "titulo": "Perchero",
+        "imagen": "../media/img/productos/percheros/perchero2.png",
+        "categoria": {
+            "nombre": "Perchero",
+            "id": "perchero"
+        },
+        "descripcion" : "Perchero",
+        "precio": 18.000
+    },
+    {
+        "id": "perchero-03",
+        "titulo": "Perchero",
+        "imagen": "../media/img/productos/percheros/perchero3.png",
+        "categoria": {
+            "nombre": "Perchero",
+            "id": "perchero"
+        },
+        "descripcion" : "Perchero",
+        "precio": 20.000
+    },
+    {
+        "id": "perchero-04",
+        "titulo": "Perchero",
+        "imagen": "../media/img/productos/percheros/perchero4.png",
+        "categoria": {
+            "nombre": "Perchero",
+            "id": "perchero"
+        },
+        "descripcion": "Perchero",
+        "precio": 15.000
+    },
+    {
+        "id": "perchero-05",
+        "titulo": "Perchero",
+        "imagen": "../media/img/productos/percheros/perchero5.png",
+        "categoria": {
+            "nombre": "Perchero",
+            "id": "perchero"
+        },
+        "descripcion" : "Perchero",
+        "precio": 20.000
+    },
+    {
+        "id": "perchero-06",
+        "titulo": "Perchero",
+        "imagen": "../media/img/productos/percheros/perchero6.png",
+        "categoria": {
+            "nombre": "Perchero",
+            "id": "perchero"
+        },
+        "descripcion" : "Perchero",
+        "precio": 12.000
+    },
+    {
+        "id": "vajilla-01",
+        "titulo": "Vajilla ",
+        "imagen": "../media/img/productos/vajilla/vajilla1.png",
+        "categoria": {
+            "nombre": "Vajilla",
+            "id": "vajilla"
+        },
+        "descripcion" : "Vajilla",
+        "precio": 1500
+    },
+    {
+        "id": "vajilla-02",
+        "titulo": "Vajilla",
+        "imagen": "../media/img/productos/vajilla/vajilla2.png",
+        "categoria": {
+            "nombre": "Vajilla",
+            "id": "vajilla"
+        },
+        "descripcion" : "Vajilla",
+        "precio": 1800
+    },
+    {
+        "id": "vajilla-03",
+        "titulo": "Vajilla",
+        "imagen": "../media/img/productos/vajilla/vajilla3.png",
+        "categoria": {
+            "nombre": "Vajilla",
+            "id": "vajilla"
+        },
+        "descripcion" : "Vajilla",
+        "precio": 2000
+    },
+    {
+        "id": "vajilla-04",
+        "titulo": "Vajilla",
+        "imagen": "../media/img/productos/vajilla/vajilla4.png",
+        "categoria": {
+            "nombre": "Vajilla",
+            "id": "vajilla"
+        },
+        "descripcion" : "Vajilla",
+        "precio": 1500
+    },
+    {
+        "id": "vajilla-05",
+        "titulo": "Vajilla",
+        "imagen": "../media/img/productos/vajilla/vajilla5.png",
+        "categoria": {
+            "nombre": "Vajilla",
+            "id": "vajilla"
+        },
+        "descripcion" : "Vajilla",
+        "precio": 2000
+    },
+    {
+        "id": "vajilla-06",
+        "titulo": "Vajilla",
+        "imagen": "../media/img/productos/vajilla/vajilla6.png",
+        "categoria": {
+            "nombre": "Vajilla",
+            "id": "vajilla"
+        },
+        "descripcion" : "Vajilla",
+        "precio": 3500
+    }
+]

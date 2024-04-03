@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./estilos/normalize.css" />
+    <link rel="stylesheet" href="./estilos/index.css" />
+
+    <link rel="icon" href="./media/img/logo/favicon.png" />
+    <!-- icons NavBar -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Carla Deco.</title>
+  </head>
+  <body>
+    <div class="progressContainer">
+      <div id="progress"></div>
+    </div>
+
+    <div class="slider-container">
+      <div class="slider-content" id="slider">
+        <div class="slider-item">
+          Envios a todo CABA Y GBA a partir de $25.00.00.
+        </div>
+        <div class="slider-item">
+          Lunes y jueves 15% OFF Transferencia Bancaria.
+        </div>
+        <div class="slider-item">
+          Cuotas (3 y 6) sin interes con Visa, Master, Cabal
+        </div>
+        <div class="slider-item">Retiro sin cargo por CABA.</div>
+        <div class="slider-item">Sabados 15% OFF en efectivo.</div>
+      </div>
+    </div>
+
+    <header>
+      <section id="logo">
+        <a href="./index.html"
+          ><img
+            id="logoImg"
+            src="./media/img/logo/logoNegro.png"
+            alt="Carla Deco."
+        /></a>
+      </section>
+
+      <section id="tiendaLink">
+        <ul>
+          <li>
+            <a href="./tienda.html"><p>Tienda</p></a>
+          </li>
+          <li>
+            <a href="./carrito.html"
+              ><img
+                id="carrito"
+                class="iconHover"
+                src="./media/icons/carrito.svg"
+                alt="Carrito de compras"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </header>
+
+    <section id="navBarMobile" class="sticky-nav">
+      <img
+        id="navBarMobileLogo"
+        src="/media/img/logo/logoBlancoTienda.png"
+        width="80px"
+        alt=""
+      />
+      <button class="abrirMenu" id="abrir" class="abrir">
+        <i class="bi bi-list"></i>
+      </button>
+    </section>
+
+    <nav class="nav" id="nav">
+      <button class="cerrarMenu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+      <img class="navLogo" src="./media/img/logo/logoSinBorde.png" alt="" />
+      <ul class="navList">
+        <li><a id="mueblesBtn" href="#">Muebles</a></li>
+        <li><a id="mesasBtn" href="#">Mesas</a></li>
+        <li><a id="sillasBtn" href="#">Sillas</a></li>
+        <li><a id="escritorioBtn" href="#">Escritorio</a></li>
+        <li><a id="vajillaBtn" href="#">Vajilla</a></li>
+        <li><a id="bañoBtn" href="#">Baño</a></li>
+      </ul>
+      <section id="barraBusqueda">
+        <form id="search-form" onsubmit="return performSearch()">
+          <input
+            class="barraBusqueda"
+            type="text"
+            id="search-input"
+            placeholder="¿Que buscas?"
+            autocomplete="off"
+          />
+          <button id="buscarInput" type="submit">
+            <img
+              id="lupa"
+              class="stickyImg"
+              src="./media/icons/lupaNegra.svg"
+              alt=""
+            />
+          </button>
+          <a href="/tienda.html" class="stickyLinks"><h3>Tienda</h3></a>
+          <a href="/carrito.html" id="tiendaStickyContainer" class="stickyLinks"
+            ><img
+              id="tiendaImgSticky"
+              src="./media/icons/carritoSticky.svg"
+              alt="carrito"
+          /></a>
+        </form>
+      </section>
+    </nav>
+
+    <div class="slider-container-hero">
+      <div class="slider-content-hero" id="slider-hero">
+        <div class="slide-hero">
+          <img src="./media/img/hero/hero1.png" alt="Slide 1" />
+        </div>
+        <div class="slide-hero">
+          <img src="./media/img/hero/hero2.png" alt="Slide 2" />
+        </div>
+        <div class="slide-hero">
+          <img src="./media/img/hero/hero3.png" alt="Slide 3" />
+        </div>
+        <div class="slide-hero">
+          <img src="./media/img/hero/hero4.png" alt="Slide 4" />
+        </div>
+        <div class="slide-hero">
+          <img src="./media/img/hero/hero5.png" alt="Slide 5" />
+        </div>
+        <div class="slide-hero">
+          <img src="./media/img/hero/hero6.png" alt="Slide 6" />
+        </div>
+        <!-- Agrega más slides según sea necesario -->
+      </div>
+
+      <button class="slider-control-hero prev-hero" onclick="prevSlideHero()">
+        <img
+          class="iconHover"
+          src="./media/icons/prev.svg"
+          width="22px"
+          alt=""
+        />
+      </button>
+      <button class="slider-control-hero next-hero" onclick="nextSlideHero()">
+        <img
+          class="iconHover"
+          src="./media/icons/next.svg"
+          width="22px"
+          alt=""
+        />
+      </button>
+    </div>
+
+    <section id="lineasDestacadas">
+      <h2>Líneas Destacadas</h2>
+      <div class="lineasDestacadasContainer">
+        <div class="lineasDestcadasItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas4.png"
+              alt=""
+              class="lineasDestacadasImg"
+            />
+            <h3>ESCRITORIOS</h3>
+          </a>
+        </div>
+        <div class="lineasDestcadasItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas1.png"
+              alt=""
+              class="lineasDestacadasImg"
+            />
+            <h3>VAJILLA</h3>
+          </a>
+        </div>
+        <div class="lineasDestcadasItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas2.png"
+              alt=""
+              class="lineasDestacadasImg"
+            />
+            <h3>ALCOLCHADOS</h3>
+          </a>
+        </div>
+        <div class="lineasDestcadasItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas3.png"
+              alt=""
+              class="lineasDestacadasImg"
+            />
+            <h3>INDIVIDUALES</h3>
+          </a>
+        </div>
+        <div class="lineasDestcadasItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas5.png"
+              alt=""
+              class="lineasDestacadasImg"
+            />
+            <h3>PERCHEROS</h3>
+          </a>
+        </div>
+        <div class="lineasDestcadasItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas6.png"
+              alt=""
+              class="lineasDestacadasImg"
+            />
+            <h3>TRAVEL</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="nuevosLanzamientosSlider">
+      <h2>Nuevos Lanzamientos</h2>
+      <div class="slider-container-new">
+        <div class="slider-content-new" id="slider-new">
+          <div class="slide-new">
+            <img
+              src="./media/img/nuevosLanzamientos/nuevosLanzamientos1.png"
+              alt="Slide 1"
+            />
+          </div>
+          <div class="slide-new">
+            <img
+              src="./media/img/nuevosLanzamientos/nuevosLanzamientos2.png"
+              alt="Slide 2"
+            />
+          </div>
+          <div class="slide-new">
+            <img
+              src="./media/img/nuevosLanzamientos/nuevosLanzamientos3.png"
+              alt="Slide 3"
+            />
+          </div>
+          <div class="slide-new">
+            <img
+              src="./media/img/nuevosLanzamientos/nuevosLanzamientos4.png"
+              alt="Slide 4"
+            />
+          </div>
+          <div class="slide-new">
+            <img
+              src="./media/img/nuevosLanzamientos/nuevosLanzamientos5.png"
+              alt="Slide 5"
+            />
+          </div>
+          <!-- Agrega más slides según sea necesario -->
+        </div>
+
+        <div class="slider-controls-new" id="controls-new"></div>
+      </div>
+    </section>
+
+    <section id="avisos">
+      <div id="avisosContainer">
+        <h3>
+          ¡Ahora podes abonar en 3 cuotas sin interés con visa, master, amex y
+          cabal a través de mercado pago!
+        </h3>
+      </div>
+    </section>
+
+    <section id="nuestrosFavoritos">
+      <h2>Nuestro Favoritos</h2>
+      <div class="nuestrosFavoritosContainer">
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas4.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>Mesa Negra Grande Fusion</h4>
+          </a>
+        </div>
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas1.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>Set Vajilla Plateada Evo</h4>
+          </a>
+        </div>
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas2.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>Alcolchado Blanco Hielo</h4>
+          </a>
+        </div>
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas3.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>Individuales</h4>
+          </a>
+        </div>
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas5.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>Mesa Negra Grande Fusion</h4>
+          </a>
+        </div>
+        <div class="nuestrosFavoritosItem">
+          <a href="./tienda.html">
+            <img
+              src="./media/img/lineasDestacadas/lineasDestacadas6.png"
+              alt=""
+              class="nuestrosFavoritosImg"
+            />
+            <h3>$20.900,00</h3>
+            <h4>Mesa Negra Grande Fusion</h4>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div id="newsletterContainer">
+        <h3>¡Siempre hay novedades!</h3>
+        <h4>
+          Suscribite a nuestro Newsletter y recibí novedades de descuentos y
+          nuevos productos.
+        </h4>
+        <form action="" class="newsletterForm">
+          <input type="email" placeholder="Email: " />
+          <input type="submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footerContainer">
+        <div class="footer-left">
+          <nav>
+            <ul>
+              <li><a href="#">Muebles</a></li>
+              <li><a href="#">Mesas</a></li>
+              <li><a href="#">Sillas</a></li>
+              <li><a href="#">Vajilla</a></li>
+              <li><a href="#">Baño</a></li>
+            </ul>
+          </nav>
+          <div class="footer-midle-info">
+            <h3>Ayuda</h3>
+            <button id="botonAbrirModal">Preguntas frecuentes</button>
+            <dialog id="modalContainer">
+              <div id="modal"> 
+                <img src="./media/img/logo/logoBlancoTienda.png" id="modalLogo" alt="">
+                <button id="botonCerrarModal"><img src="./media/icons/close.svg" alt="Cerrar ventana emergente"></button>
+                <h2>Preguntas frecuentes: </h2>
+                <h3>¿Cuáles son los medios de pago?:</h3>
+                <p>
+                  Podés abonar a través de Mercado Pago con tarjeta de debito o credito en hasta 3 cuotas sin interés con Visa, Mastercard, American Express y Cabal emitidas por bancos.
+                </p>
+                <h3>¿Puedo pagar en cuotas?:</h3>
+                <p>
+                  Si. podes abonar pagar en 1 o 3 cuotas sin interes simpre que sean Visa, Mastercard, American Express y Cabal emitias por bancos.
+                </p>
+                <h3>¿Realizan envíos?: </h3>
+                <p>
+                  Si. Hacemos envíos a todo el país. El costo de envío depende del tamaño del producto y la provincia a la que quieras enviarlo,
+                  podés consultarlo en la publicación del producto, debajo del precio y los medios de pago, en la sección que dice “Calcular costos de envío”.
+                  También podés consultar el costo del total de tus productos en el carrito de compras. Para esto, tenés que ingresar tu código postal
+                  y se te desplegarán tanto las sucursales disponibles para retiro como el costo de envío a tu domicilio
+                </p>
+                <h3>¿Cuáles son los tiempos de entrega?:</h3>
+                <p>
+                  Los tiempos de entrega dependerán de los productos que compres y del lugar de entrega. Cuando se realiza un envío dentro de CABA y GBA hasta 50 km,
+                   se entregará en su domicilio dentro de los 4 días hábiles posteriores al despacho.
+                  En el interior del país demorará puede ser de 4 a 7 días hábiles. Salvo las provincias más alejadas, en las que puede demorar un poco más.
+                  El correo entregará en domicilio dentro de la franja horaria de lunes a viernes de 9 a 17 hs.
+                </p>
+                <h3>¿Quién puede recibir mi pedido?:</h3>
+                <p>
+                  Puede recibir tu pedido cualquier persona mayor de 18 años. Si va a ser otra la persona que va a recibirlo, te pedimos que lo aclares al momento de realizar el pedido.
+                </p>
+                <h3>¿Qué pasa si el correo viene a domicilio y no me encuentra?:</h3>
+                <p>
+                  El correo irá a tu domicilio en dos oportunidades. En caso de que no se encuentre nadie capaz de recibir el pedido en el domicilio,
+                   el paquete volverá a la Sucursal de Andreani y estará allí los siguientes cinco días. Contactanos para coordinar su retiro.
+                </p>
+                <h3>¿Quién puede retirar el pedido y qué necesita para retirarlo?:</h3>
+                <p>
+                  Puede retirar tu pedido cualquier persona mayor de 18 años. En caso de que el pedido sea retirado por una persona distinta al titular de la compra,
+                  el titular deberá enviarnos un email a ventasonline@morph.com.ar con los datos de la persona autorizada (Nombre, Apellido, DNI). 
+                  Al acercarse a línea de caja, podrán retirar cualquiera de los dos únicamente con el nombre de la persona titular del pedido o el número de operación.
+                </p>
+                <h3>MI DUDA NO ESTA EN LA LISTA</h3>
+                <p>
+                  <b>Contactate con nosotros.</b><br><br>
+                  (011)-48285600<br>
+                  CarlaDecoAyuda@gmail.com
+                </p>
+                <button id="botonCerrarModal2"><img src="./media/icons/volver.svg" alt=""></button>
+              </div>
+            </dialog>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="social-media">
+            <div class="social-icons">
+              <h3>Redes Sociales</h3>
+              <a href="#"
+                ><img src="./media/icons/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="./media/icons/instagram.svg" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+          <div class="payment">
+            <div class="payment-icons">
+              <h3>Metodos de pago</h3>
+              <a href="#"
+                ><img src="./media/icons/american.svg" alt="visa"
+              /></a>
+              <a href="#"><img src="./media/icons/visa.svg" alt="visa" /></a>
+              <a href="#"><img src="./media/icons/mastercard.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="footer-info infoDesktop">
+            <p>Dirección: 123 Calle Principal, Ciudad</p>
+            <p>Teléfono: 555-123-4567</p>
+            <p>Email: info@example.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info infoMobile">
+        <p>Dirección: 123 Calle Principal, Ciudad</p>
+        <p>Teléfono: 555-123-4567</p>
+        <p>Email: info@example.com</p>
+      </div>
+    </footer>
+
+    <div id="footerLogo">
+      <a href="./index.html"
+        ><img src="./media/img/logo/logoBlancoTienda.png" alt=""
+      /></a>
+    </div>
+
+    <div id="novedadesCallToAction">
+      <button id="cerrarNovedades"><img src="/media/icons/close.svg" id="closeMsg" width="10px" alt=""></button>
+      <h3 class="novedadesTitulo">Suscríbete!</h3>
+      <div id="novedadesForm" class="novedadesContainer">
+        <h4 class="novedadesInfo">
+          Recibí descuentos y novedades de nuevos productos!
+        </h4>
+        <form action="" class="novedadesForm">
+          <input
+            id="email"
+            type="email"
+            placeholder="Email: "
+            autocomplete="off"
+          />
+          <input
+            id="objetoPreferido"
+            type="text"
+            placeholder="Produto fav: "
+            autocomplete="off"
+            maxlength= "25"
+          />
+          <input id="enviar" type="submit" />
+        </form>
+      </div>
+    </div>
+
+    </div>
+
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/messageSlider.js"></script>
+    <script src="./scripts/buscador.js"></script>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/sticky.js"></script>
+    <script src="./scripts/heroSlider.js"></script>
+    <script src="./scripts/nuevoLanzamientosSlider.js"></script>
+    <script src="./scripts/carrito.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/novedadesForm.js"></script>
+    <script src="./scripts/dialog.js"></script>
+  </body>
+</html>
