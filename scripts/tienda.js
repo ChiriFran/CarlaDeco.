@@ -18,10 +18,10 @@ const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
 
-function cargarProductos() {
+function cargarProductos(productosMostrar = productos) {
   contenedorProductos.innerHTML = "";
 
-  const productosPagina = productos.slice(
+  const productosPagina = productosMostrar.slice(
     indiceInicio,
     indiceInicio + productosPorPagina
   );
@@ -44,6 +44,7 @@ function cargarProductos() {
 
   actualizarBotonesAgregar();
 }
+
 
 function avanzarProductos() {
   const totalPaginas = Math.ceil(productos.length / productosPorPagina);
