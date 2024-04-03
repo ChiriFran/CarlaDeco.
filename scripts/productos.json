@@ -2,7 +2,7 @@
     {
         "id": "mueble-01",
         "titulo": "Mesa",
-        "imagen": "../media/img/productos/mesas/mesa1.png",
+        "imagen": "./media/img/productos/mesas/mesa1.png",
         "categoria": {
             "nombre": "Muebles",
             "id": "mesa"
@@ -13,7 +13,7 @@
     {
         "id": "mueble-02",
         "titulo": "Mesa",
-        "imagen": "../media/img/productos/mesas/mesa2.png",
+        "imagen": "./media/img/productos/mesas/mesa2.png",
         "categoria": {
             "nombre": "Muebles",
             "id": "mesa"
@@ -24,7 +24,7 @@
     {
         "id": "mueble-03",
         "titulo": "Mesa",
-        "imagen": "../media/img/productos/mesas/mesa3.png",
+        "imagen": "./media/img/productos/mesas/mesa3.png",
         "categoria": {
             "nombre": "Muebles",
             "id": "mesa"
@@ -35,7 +35,7 @@
     {
         "id": "mueble-04",
         "titulo": "Mesa",
-        "imagen": "../media/img/productos/mesas/mesa4.png",
+        "imagen": "./media/img/productos/mesas/mesa4.png",
         "categoria": {
             "nombre": "Muebles",
             "id": "mesa"
@@ -46,7 +46,7 @@
     {
         "id": "mueble-05",
         "titulo": "Mesa",
-        "imagen": "../media/img/productos/mesas/mesa5.png",
+        "imagen": "./media/img/productos/mesas/mesa5.png",
         "categoria": {
             "nombre": "Muebles",
             "id": "mesa"
@@ -57,7 +57,7 @@
     {
         "id": "escritorios-01",
         "titulo": "Escritorio",
-        "imagen": "../media/img/productos/escritorios/escritorio1.png",
+        "imagen": "./media/img/productos/escritorios/escritorio1.png",
         "categoria": {
             "nombre": "Escritorios",
             "id": "escritorio"
@@ -68,7 +68,7 @@
     {
         "id": "escritorios-02",
         "titulo": "Escritorio",
-        "imagen": "../media/img/productos/escritorios/escritorio2.png",
+        "imagen": "./media/img/productos/escritorios/escritorio2.png",
         "categoria": {
             "nombre": "Escritorios",
             "id": "escritorio"
@@ -79,7 +79,7 @@
     {
         "id": "escritorios-03",
         "titulo": "Escritorio",
-        "imagen": "../media/img/productos/escritorios/escritorio3.png",
+        "imagen": "./media/img/productos/escritorios/escritorio3.png",
         "categoria": {
             "nombre": "Escritorios",
             "id": "escritorio"
@@ -90,7 +90,7 @@
     {
         "id": "escritorios-04",
         "titulo": "Escritorio",
-        "imagen": "../media/img/productos/escritorios/escritorio4.png",
+        "imagen": "./media/img/productos/escritorios/escritorio4.png",
         "categoria": {
             "nombre": "Escritorios",
             "id": "escritorio"
@@ -101,7 +101,7 @@
     {
         "id": "perchero-01",
         "titulo": "Perchero ",
-        "imagen": "../media/img/productos/percheros/perchero1.png",
+        "imagen": "./media/img/productos/percheros/perchero1.png",
         "categoria": {
             "nombre": "Perchero",
             "id": "perchero"
@@ -112,7 +112,7 @@
     {
         "id": "perchero-02",
         "titulo": "Perchero",
-        "imagen": "../media/img/productos/percheros/perchero2.png",
+        "imagen": "./media/img/productos/percheros/perchero2.png",
         "categoria": {
             "nombre": "Perchero",
             "id": "perchero"
@@ -123,7 +123,7 @@
     {
         "id": "perchero-03",
         "titulo": "Perchero",
-        "imagen": "../media/img/productos/percheros/perchero3.png",
+        "imagen": "./media/img/productos/percheros/perchero3.png",
         "categoria": {
             "nombre": "Perchero",
             "id": "perchero"
@@ -134,7 +134,7 @@
     {
         "id": "perchero-04",
         "titulo": "Perchero",
-        "imagen": "../media/img/productos/percheros/perchero4.png",
+        "imagen": "./media/img/productos/percheros/perchero4.png",
         "categoria": {
             "nombre": "Perchero",
             "id": "perchero"
@@ -145,7 +145,7 @@
     {
         "id": "perchero-05",
         "titulo": "Perchero",
-        "imagen": "../media/img/productos/percheros/perchero5.png",
+        "imagen": "./media/img/productos/percheros/perchero5.png",
         "categoria": {
             "nombre": "Perchero",
             "id": "perchero"
@@ -156,7 +156,7 @@
     {
         "id": "perchero-06",
         "titulo": "Perchero",
-        "imagen": "../media/img/productos/percheros/perchero6.png",
+        "imagen": "./media/img/productos/percheros/perchero6.png",
         "categoria": {
             "nombre": "Perchero",
             "id": "perchero"
@@ -167,7 +167,7 @@
     {
         "id": "vajilla-01",
         "titulo": "Vajilla ",
-        "imagen": "../media/img/productos/vajilla/vajilla1.png",
+        "imagen": "./media/img/productos/vajilla/vajilla1.png",
         "categoria": {
             "nombre": "Vajilla",
             "id": "vajilla"
@@ -178,7 +178,7 @@
     {
         "id": "vajilla-02",
         "titulo": "Vajilla",
-        "imagen": "../media/img/productos/vajilla/vajilla2.png",
+        "imagen": "./media/img/productos/vajilla/vajilla2.png",
         "categoria": {
             "nombre": "Vajilla",
             "id": "vajilla"
@@ -189,7 +189,7 @@
     {
         "id": "vajilla-03",
         "titulo": "Vajilla",
-        "imagen": "../media/img/productos/vajilla/vajilla3.png",
+        "imagen": "./media/img/productos/vajilla/vajilla3.png",
         "categoria": {
             "nombre": "Vajilla",
             "id": "vajilla"
@@ -200,7 +200,7 @@
     {
         "id": "vajilla-04",
         "titulo": "Vajilla",
-        "imagen": "../media/img/productos/vajilla/vajilla4.png",
+        "imagen": "./media/img/productos/vajilla/vajilla4.png",
         "categoria": {
             "nombre": "Vajilla",
             "id": "vajilla"
@@ -211,7 +211,7 @@
     {
         "id": "vajilla-05",
         "titulo": "Vajilla",
-        "imagen": "../media/img/productos/vajilla/vajilla5.png",
+        "imagen": "./media/img/productos/vajilla/vajilla5.png",
         "categoria": {
             "nombre": "Vajilla",
             "id": "vajilla"
@@ -222,7 +222,7 @@
     {
         "id": "vajilla-06",
         "titulo": "Vajilla",
-        "imagen": "../media/img/productos/vajilla/vajilla6.png",
+        "imagen": "./media/img/productos/vajilla/vajilla6.png",
         "categoria": {
             "nombre": "Vajilla",
             "id": "vajilla"
