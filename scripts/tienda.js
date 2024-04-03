@@ -2,7 +2,7 @@ let productos = [];
 let indiceInicio = 0; // Índice de inicio para mostrar los productos
 const productosPorPagina = 16;
 
-fetch("../scripts/productos.json")
+fetch("./scripts/productos.json")
   .then((response) => response.json())
   .then((data) => {
     productos = data;
