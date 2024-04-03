@@ -2,7 +2,7 @@ let productos = [];
 let indiceInicio = 0; // Índice de inicio para mostrar los productos
 const productosPorPagina = 16;
 
-fetch("./scripts/productos.json")
+fetch("./productos.json")
   .then((response) => response.json())
   .then((data) => {
     productos = data;
@@ -68,12 +68,12 @@ document.querySelector("main").appendChild(contenedorControles);
 // Botones de avanzar y retroceder
 const botonAvanzar = document.createElement("button");
 botonAvanzar.innerHTML =
-  "<img src='../media/icons/flechaDerRedonda.svg' alt='Imagen de Avance'>";
+  "<img src='./media/icons/flechaDerRedonda.svg' alt='Imagen de Avance'>";
 botonAvanzar.addEventListener("click", avanzarProductos);
 
 const botonRetroceder = document.createElement("button");
 botonRetroceder.innerHTML =
-"<img src='../media/icons/flechaIzqRedonda.svg' alt='Imagen de retroceso'>";
+"<img src='./media/icons/flechaIzqRedonda.svg' alt='Imagen de retroceso'>";
 botonRetroceder.addEventListener("click", retrocederProductos);
 
 // Agregar botones al contenedor de controles
