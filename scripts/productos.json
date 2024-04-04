@@ -4,7 +4,7 @@
         "titulo": "Mesa",
         "imagen": "./media/img/productos/mesas/mesa1.png",
         "categoria": {
-            "nombre": "Muebles",
+            "nombre": "Mesa",
             "id": "mesa"
         },
         "descripcion" : "Natural",
@@ -15,7 +15,7 @@
         "titulo": "Mesa",
         "imagen": "./media/img/productos/mesas/mesa2.png",
         "categoria": {
-            "nombre": "Muebles",
+            "nombre": "Mesa",
             "id": "mesa"
         },
         "descripcion" : "Oscuro",
@@ -26,7 +26,7 @@
         "titulo": "Mesa",
         "imagen": "./media/img/productos/mesas/mesa3.png",
         "categoria": {
-            "nombre": "Muebles",
+            "nombre": "Mesa",
             "id": "mesa"
         },
         "descripcion" : "Natural",
@@ -37,7 +37,7 @@
         "titulo": "Mesa",
         "imagen": "./media/img/productos/mesas/mesa4.png",
         "categoria": {
-            "nombre": "Muebles",
+            "nombre": "Mesa",
             "id": "mesa"
         },
         "descripcion" : "Mesa",
@@ -48,7 +48,7 @@
         "titulo": "Mesa",
         "imagen": "./media/img/productos/mesas/mesa5.png",
         "categoria": {
-            "nombre": "Muebles",
+            "nombre": "Mesa",
             "id": "mesa"
         },
         "descripcion" : "Mesa",
@@ -103,7 +103,7 @@
         "titulo": "Perchero ",
         "imagen": "./media/img/productos/percheros/perchero1.png",
         "categoria": {
-            "nombre": "Perchero",
+            "nombre": "Percheros",
             "id": "perchero"
         },
         "descripcion" : "Perchero",
@@ -114,7 +114,7 @@
         "titulo": "Perchero",
         "imagen": "./media/img/productos/percheros/perchero2.png",
         "categoria": {
-            "nombre": "Perchero",
+            "nombre": "Percheros",
             "id": "perchero"
         },
         "descripcion" : "Perchero",
@@ -125,7 +125,7 @@
         "titulo": "Perchero",
         "imagen": "./media/img/productos/percheros/perchero3.png",
         "categoria": {
-            "nombre": "Perchero",
+            "nombre": "Percheros",
             "id": "perchero"
         },
         "descripcion" : "Perchero",
@@ -136,7 +136,7 @@
         "titulo": "Perchero",
         "imagen": "./media/img/productos/percheros/perchero4.png",
         "categoria": {
-            "nombre": "Perchero",
+            "nombre": "Percheros",
             "id": "perchero"
         },
         "descripcion": "Perchero",
@@ -147,7 +147,7 @@
         "titulo": "Perchero",
         "imagen": "./media/img/productos/percheros/perchero5.png",
         "categoria": {
-            "nombre": "Perchero",
+            "nombre": "Percheros",
             "id": "perchero"
         },
         "descripcion" : "Perchero",
@@ -158,7 +158,7 @@
         "titulo": "Perchero",
         "imagen": "./media/img/productos/percheros/perchero6.png",
         "categoria": {
-            "nombre": "Perchero",
+            "nombre": "Percheros",
             "id": "perchero"
         },
         "descripcion" : "Perchero",

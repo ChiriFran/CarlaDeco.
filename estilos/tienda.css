@@ -196,17 +196,14 @@ main {
 .producto-agregar {
   border: 0;
   cursor: pointer;
-  padding: 1.2rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 2rem;
-  background-image: url(../media/icons/carritoSticky.svg);
+  background-image: url(../media/icons/carrito.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-}
-
-.producto-agregar:hover {
-  background-color: var(--clr-main);
-  background-image: url(../media//icons/carritoSticky.svg);
+  background-color: transparent;
+  transition: .5s;
 }
 
 .producto-imagen {
