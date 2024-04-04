@@ -69,7 +69,7 @@
               ><img
                 id="carrito"
                 class="iconHover"
-                src="./media/icons/carrito.svg"
+                src="./media/icons/cartBlack.svg"
                 alt="Carrito de compras"
             /></a>
           </li>
@@ -93,12 +93,10 @@
       <button class="cerrarMenu" id="cerrar"><i class="bi bi-x-lg"></i></button>
       <img class="navLogo" src="./media/img/logo/logoSinBorde.png" alt="" />
       <ul class="navList">
-        <li><a id="mueblesBtn" href="#">Muebles</a></li>
-        <li><a id="mesasBtn" href="#">Mesas</a></li>
-        <li><a id="sillasBtn" href="#">Sillas</a></li>
-        <li><a id="escritorioBtn" href="#">Escritorio</a></li>
-        <li><a id="vajillaBtn" href="#">Vajilla</a></li>
-        <li><a id="bañoBtn" href="#">Baño</a></li>
+        <li><a id="mueblesBtn" href="#lineasDestacadas">Destacado</a></li>
+        <li><a id="mesasBtn" href="#nuevosLanzamientosSlider">Lanzamientos</a></li>
+        <li><a id="sillasBtn" href="#nuestrosFavoritos">Favoritos</a></li>
+        <li><button id="botonAbrirModalNav">Preguntas frecuentes</button></li>
       </ul>
       <section id="barraBusqueda">
         <form id="search-form" onsubmit="return performSearch()">
@@ -121,7 +119,7 @@
           <a href="/carrito.html" id="tiendaStickyContainer" class="stickyLinks"
             ><img
               id="tiendaImgSticky"
-              src="./media/icons/carritoSticky.svg"
+              src="./media/icons/cartWhite.svg"
               alt="carrito"
           /></a>
         </form>
@@ -361,8 +359,7 @@
       <div id="newsletterContainer">
         <h3>¡Siempre hay novedades!</h3>
         <h4>
-          Suscribite a nuestro Newsletter y recibí novedades de descuentos y
-          nuevos productos.
+          Completá tus datos y obtené un 15% off en tu próxima compra.
         </h4>
         <form action="" class="newsletterForm">
           <input type="email" placeholder="Email: " />

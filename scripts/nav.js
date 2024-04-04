@@ -2,6 +2,7 @@ const nav = document.getElementById("nav");
 const abrir = document.getElementById("abrir");
 const cerrar = document.getElementById("cerrar");
 const navBtn = document.querySelectorAll(".navBtn");
+const navList = document.querySelectorAll(".navList");
 const body = document.body;
 
 abrir.addEventListener("click", () => {
@@ -41,5 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       window.scrollTo({ top: y/* , behavior: "smooth"  */});
     }
+  });
+});
+
+navList.forEach( link => {
+  link.addEventListener('click', () => {
+    body.style.overflow = "auto"; // Restaura el scroll del body al hacer clic en un botón del nav
   });
 });

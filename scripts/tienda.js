@@ -45,7 +45,6 @@ function cargarProductos(productosMostrar = productos) {
   actualizarBotonesAgregar();
 }
 
-
 function avanzarProductos() {
   const totalPaginas = Math.ceil(productos.length / productosPorPagina);
   if (indiceInicio + productosPorPagina < productos.length) {
@@ -74,7 +73,7 @@ botonAvanzar.addEventListener("click", avanzarProductos);
 
 const botonRetroceder = document.createElement("button");
 botonRetroceder.innerHTML =
-"<img src='./media/icons/flechaIzqRedonda.svg' alt='Imagen de retroceso'>";
+  "<img src='./media/icons/flechaIzqRedonda.svg' alt='Imagen de retroceso'>";
 botonRetroceder.addEventListener("click", retrocederProductos);
 
 // Agregar botones al contenedor de controles

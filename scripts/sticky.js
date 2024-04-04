@@ -12,6 +12,7 @@ function applyStickyStyles(isSticky) {
   const stickyLinks = document.querySelectorAll(".stickyLinks");
   const iconNavBarMobileLogo = document.getElementById("navBarMobileLogo");
   const iconNavBarMobile = document.getElementById("navBarMobile");
+  const botonAbrirModalNav = document.getElementById("botonAbrirModalNav");
 
   nav.classList.toggle("sticky", isSticky);
   logo.classList.toggle("logoSticky", isSticky);
@@ -19,7 +20,9 @@ function applyStickyStyles(isSticky) {
 
   const backgroundColor = isSticky ? "#0e0700" : "#f6f1e9";
   const textColor = isSticky ? "#fff" : "#2b2b2b";
-  const borderBottomColor = isSticky ? "rgba(255, 255, 255, 0.7)" : "rgba(0, 0, 0, 0.2)";
+  const borderBottomColor = isSticky
+    ? "rgba(255, 255, 255, 0.7)"
+    : "rgba(0, 0, 0, 0.2)";
   const visibility = isSticky ? "visible" : "hidden";
   const position = isSticky ? "relative" : "absolute";
 
@@ -30,29 +33,35 @@ function applyStickyStyles(isSticky) {
   iconNavBarMobileLogo.style.visibility = visibility;
   iconNavBarMobileLogo.style.position = position;
 
-  stickyLinks.forEach(link => {
+  stickyLinks.forEach((link) => {
     link.style.position = position;
     link.style.visibility = visibility;
   });
+
+  // Cambiar color de fondo del botón según el estado sticky
+  botonAbrirModalNav.style.backgroundColor = backgroundColor;
+  botonAbrirModalNav.style.color = textColor;
 }
 
 function handleStickyActions(isSticky) {
   const lupa = document.getElementById("lupa");
-  const carritoLogoStickyContainer = document.getElementById("tiendaStickyContainer");
+  const carritoLogoStickyContainer = document.getElementById(
+    "tiendaStickyContainer"
+  );
   const carritoLogoSticky = document.getElementById("tiendaImgSticky");
 
-  lupa.src = `./media/icons/lupa${isSticky ? 'Blanca' : 'Negra'}.svg`;
+  lupa.src = `./media/icons/lupa${isSticky ? "Blanca" : "Negra"}.svg`;
 
-  const carritoLogoSrc = isSticky ? "./media/icons/carritoStickyNegro.svg" : "./media/icons/carritoSticky.svg";
+  const carritoLogoSrc = isSticky
+    ? "./media/icons/cartBlack.svg"
+    : "./media/icons/cartWhite.svg";
   carritoLogoStickyContainer.addEventListener("mouseover", () => {
     carritoLogoSticky.src = carritoLogoSrc;
   });
 
   carritoLogoStickyContainer.addEventListener("mouseout", () => {
-    carritoLogoSticky.src = "./media/icons/carritoSticky.svg";
+    carritoLogoSticky.src = "./media/icons/cartWhite.svg";
   });
 }
 
 window.addEventListener("scroll", handleScroll);
-
-

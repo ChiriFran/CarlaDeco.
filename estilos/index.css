@@ -144,6 +144,21 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+#botonAbrirModalNav {
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: none;
+  background-color: var(--colorBase);
+  color: var(--colorFont);
+  border-radius: 2px;
+  margin-left: 2rem;
+}
+
+#botonAbrirModalNav:hover {
+  text-decoration: underline;
+}
+
 .sticky {
   position: sticky;
   top: 0;
@@ -216,6 +231,7 @@ nav ul li a:hover::after {
   font-weight: 600;
   letter-spacing: 2px;
   padding: 0.8rem 1rem;
+  margin: 0 0.5rem;
   border-radius: 2px;
   transition: 0.3s;
 }
@@ -532,21 +548,23 @@ form {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  margin: 3rem 0;
 }
 
 #newsletterContainer h3 {
-  font-size: clamp(1rem, 2vh, 1.8rem);
+  font-size: clamp(1.4rem, 2vh, 1.8rem);
   text-transform: uppercase;
-  margin: 2rem 0 1rem 0;
+  margin: 3rem 0 1rem 0;
 }
 
 #newsletterContainer h4 {
   font-size: clamp(0.7rem, 2vw, 1rem);
-  margin: 0 0 1rem 0;
+  margin: 0 1rem 0;
 }
 
 #newsletterContainer form {
   margin-bottom: 3rem;
+  margin: 2rem 0;
 }
 
 #newsletterContainer form input {
@@ -1087,7 +1105,7 @@ footer nav ul li:hover {
     width: 80%;
   }
 
-  .infoDesktop{
+  .infoDesktop {
     display: none;
   }
 

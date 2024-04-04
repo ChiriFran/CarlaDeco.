@@ -198,12 +198,11 @@ main {
   cursor: pointer;
   padding: 1rem 3rem;
   border-radius: 2rem;
-  background-image: url(../media/icons/carrito.svg);
+  background-image: url(../media/icons/cartWhite.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background-color: transparent;
-  transition: .5s;
 }
 
 .producto-imagen {
