@@ -1,7 +1,6 @@
 const nav = document.getElementById("nav");
 const abrir = document.getElementById("abrir");
 const cerrar = document.getElementById("cerrar");
-const navBtn = document.querySelectorAll(".navBtn");
 const navList = document.querySelectorAll(".navList");
 const body = document.body;
 
