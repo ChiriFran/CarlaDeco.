@@ -198,3 +198,4 @@ window.addEventListener("scroll", () => {
     ? headerMobile.classList.add("header-fixed")
     : headerMobile.classList.remove("header-fixed");
 });
+
