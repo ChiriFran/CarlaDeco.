@@ -19,7 +19,7 @@ cerrar.addEventListener("click", () => {
   body.style.width = ""; // Restaura el ancho del body
 });
 
-navBtn.forEach((boton) => {
+navList.forEach((boton) => {
   boton.addEventListener("click", () => {
     nav.classList.remove("navVisible");
     body.style.overflow = "auto"; // Restaura el scroll del body al hacer clic en un botón del nav
@@ -42,11 +42,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
       window.scrollTo({ top: y/* , behavior: "smooth"  */});
     }
-  });
-});
-
-navList.forEach( link => {
-  link.addEventListener('click', () => {
-    body.style.overflow = "auto"; // Restaura el scroll del body al hacer clic en un botón del nav
   });
 });
