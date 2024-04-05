@@ -44,32 +44,59 @@ body {
   );
 }
 
-.slider-container {
-  overflow: hidden;
+#mensajeSlider {
   width: 100%;
-  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
   background-color: var(--colorFont);
 }
-.slider-content {
-  color: var(--colorBase);
+
+.carousel-container {
   display: flex;
-  transition: transform 1s ease;
-}
-.slider-item {
-  flex: 0 0 100%;
-  text-align: center;
-  padding: 0.6rem;
-  font-size: clamp(0.8rem, 2vw, 1rem);
-  animation: efectoEntrada 0.8s ease-in;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  width: 500%;
+  background-color: var(--colorFont);
+  animation: moveText 180s linear infinite forwards;
 }
 
-@keyframes efectoEntrada {
-  from {
-    filter: blur(2px);
+@keyframes moveText {
+  0% {
+    transform: translateX(0%);
   }
-  to {
-    filter: blur(0);
+  50% {
+    transform: translateX(-100%);
   }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.carousel-text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--colorBase);
+  overflow: hidden;
+  padding: 0.6rem 0;
+}
+
+.carousel-text{
+  font-size: clamp(0.6rem,2vw, 0.8rem);
+}
+
+.infoSliderSticky {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  transition: 1s;
+  margin: 0 0;
+  padding: 0 0;
 }
 
 header {
@@ -77,6 +104,7 @@ header {
   flex-flow: row;
   justify-content: space-between;
   margin-left: 10%;
+  margin-top: 2rem;
 }
 #logoImg {
   width: 150px;
@@ -161,7 +189,7 @@ nav ul li a:hover::after {
 
 .sticky {
   position: sticky;
-  top: 0;
+  top: 2rem;
   padding: 1rem 2rem;
   background: var(--colorFont);
   color: var(--colorBase);
