@@ -60,7 +60,7 @@ body {
   justify-content: center;
   width: 500%;
   background-color: var(--colorFont);
-  animation: moveText 120s linear infinite forwards;
+  animation: moveText 60s linear infinite forwards;
 }
 
 @keyframes moveText {
