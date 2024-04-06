@@ -996,6 +996,10 @@ footer nav ul li:hover {
     overflow: hidden;
   }
 
+  header{
+    margin-top:5rem;
+  }
+
   .abrirMenu,
   .cerrarMenu {
     display: block;
