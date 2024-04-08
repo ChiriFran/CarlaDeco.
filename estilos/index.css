@@ -956,6 +956,7 @@ footer nav ul li:hover {
 @media screen and (max-width: 1000px) {
   header {
     margin: 0 1rem;
+    margin-top: 2.8rem;
   }
 
   .slider-container-hero {
@@ -994,10 +995,6 @@ footer nav ul li:hover {
 
   body.scroll-lock {
     overflow: hidden;
-  }
-
-  header{
-    margin-top:2.8rem;
   }
 
   .abrirMenu,
