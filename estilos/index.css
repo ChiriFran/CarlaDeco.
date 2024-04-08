@@ -47,7 +47,7 @@ body {
 #mensajeSlider {
   width: 100%;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 100000;
   position: fixed;
   top: 0;
   background-color: var(--colorFont);
@@ -60,7 +60,7 @@ body {
   justify-content: center;
   width: 500%;
   background-color: var(--colorFont);
-  animation: moveText 180s linear infinite forwards;
+  animation: moveText 120s linear infinite forwards;
 }
 
 @keyframes moveText {
@@ -70,7 +70,7 @@ body {
   50% {
     transform: translateX(-100%);
   }
-  100%{
+  100% {
     transform: translateX(0);
   }
 }
@@ -86,8 +86,8 @@ body {
   padding: 0.6rem 0;
 }
 
-.carousel-text{
-  font-size: clamp(0.6rem,2vw, 0.8rem);
+.carousel-text {
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
 }
 
 .infoSliderSticky {
@@ -181,6 +181,7 @@ nav ul li a:hover::after {
   color: var(--colorFont);
   border-radius: 2px;
   margin-left: 2rem;
+  transition: 0.3s;
 }
 
 #botonAbrirModalNav:hover {
@@ -206,6 +207,7 @@ nav ul li a:hover::after {
 
 .logoSticky {
   visibility: visible;
+  cursor: pointer;
 }
 
 .stickyLinks {
@@ -954,7 +956,6 @@ footer nav ul li:hover {
 }
 
 @media screen and (max-width: 1000px) {
-
   .carousel-container {
     animation: moveText 60s linear infinite forwards;
   }
@@ -974,11 +975,11 @@ footer nav ul li:hover {
     align-items: center;
   }
 
-  #navBarMobile {
+  .sticky-nav {
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     transition: 0.2s;
   }
@@ -986,11 +987,14 @@ footer nav ul li:hover {
   .mobileSticky {
     position: sticky;
     top: 0;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     background: var(--colorFont);
     color: var(--colorBase);
     z-index: 10000;
     transition: 0.4s;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
   }
 
   #navBarMobileLogo {
