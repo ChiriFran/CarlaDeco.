@@ -127,12 +127,6 @@ header {
   transition: 0.3s;
 }
 
-#tiendaLink ul li:hover {
-  background-color: var(--colorPrimary);
-  color: var(--colorFont);
-  transition: 0.2s;
-}
-
 #tiendaLink ul li a {
   text-decoration: none;
   font-weight: 400;
@@ -157,7 +151,7 @@ header {
 .underlined-hover {
   position: relative;
   text-decoration: none;
-  color: #333;
+  color: var(--colorFont);
 }
 
 .underlined-hover::before {
@@ -167,7 +161,7 @@ header {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #000; /* Color del subrayado */
+  background-color: var(--colorFont); /* Color del subrayado */
   transition: 0.5s ease;
 }
 

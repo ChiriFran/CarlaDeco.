@@ -41,6 +41,15 @@ function applyStickyStyles(isSticky) {
   // Cambiar color de fondo del botón según el estado sticky
   botonAbrirModalNav.style.backgroundColor = backgroundColor;
   botonAbrirModalNav.style.color = textColor;
+
+  // Cambiar color del subrayado del texto dentro del elemento .underline-hover::before
+  const underlineHovers = document.querySelectorAll(".underlined-hover");
+  underlineHovers.forEach((underlineHover) => {
+    underlineHover.style.setProperty(
+      "--colorFont",
+      isSticky ? "#fff" : "#000"
+    );
+  });
 }
 
 function handleStickyActions(isSticky) {
