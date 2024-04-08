@@ -60,7 +60,7 @@ body {
   justify-content: center;
   width: 500%;
   background-color: var(--colorFont);
-  animation: moveText 180s linear infinite forwards;
+  animation: moveText 120s linear infinite forwards;
 }
 
 @keyframes moveText {
@@ -954,8 +954,14 @@ footer nav ul li:hover {
 }
 
 @media screen and (max-width: 1000px) {
+
+  .carousel-container {
+    animation: moveText 60s linear infinite forwards;
+  }
+
   header {
     margin: 0 1rem;
+    margin-top: 2.8rem;
   }
 
   .slider-container-hero {
