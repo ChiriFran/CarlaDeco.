@@ -84,9 +84,6 @@ body {
   color: var(--colorBase);
   overflow: hidden;
   padding: 0.6rem 0;
-}
-
-.carousel-text {
   font-size: clamp(0.6rem, 2vw, 0.8rem);
 }
 
@@ -157,18 +154,24 @@ header {
   transition: 0.3s;
 }
 
-nav ul li a::after {
+.underlined-hover {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+}
+
+.underlined-hover::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: black;
-  transition: width 0.3s ease;
+  background-color: #000; /* Color del subrayado */
+  transition: 0.5s ease;
 }
 
-nav ul li a:hover::after {
+.underlined-hover:hover::before {
   width: 100%;
 }
 
@@ -182,10 +185,6 @@ nav ul li a:hover::after {
   border-radius: 2px;
   margin-left: 2rem;
   transition: 0.3s;
-}
-
-#botonAbrirModalNav:hover {
-  text-decoration: underline;
 }
 
 .sticky {
