@@ -33,7 +33,7 @@ function cargarProductos(productosMostrar = productos) {
         <div class="producto">
             <img src="${producto.imagen}" alt="${producto.titulo}" class="producto-imagen">
             <div class="image-hover">
-            <button class="producto-agregar" id="${producto.id}"></button>
+            <button class="producto-agregar checkout-btn" id="${producto.id}"></button>
             </div>
         </div>
         <h2 class="producto-titulo">${producto.titulo}</h2>

@@ -43,6 +43,7 @@ function cargarProductosCarrito() {
                     <small>Subtotal</small>
                     <p>$${producto.precio * producto.cantidad}</p>
                 </div>
+                <div id="wallet_container"><div/>
                 <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
             `;
     
@@ -131,6 +132,8 @@ function actualizarTotal() {
 
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito() {
+
+
 
     productosEnCarrito.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
